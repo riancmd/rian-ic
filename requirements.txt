@@ -1,0 +1,7 @@
+streamlit
+numpy
+sympy
+galois
+qrcode[pil]
+matplotlib
+pillow
