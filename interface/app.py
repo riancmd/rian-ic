@@ -13,6 +13,7 @@ st.set_page_config(
 # - estilo do bloco de cima com informações de cabeçalho (.hero/.herotag)
 # - estilo do titulo
 # - estilo do footer
+# - estilo dos cards de navegação das páginas
 
 st.markdown("""
 <style>
@@ -52,6 +53,35 @@ html, body, [class*="css"] {
     font-size: 1rem;
     line-height: 1.8;
 }
+            
+.nav-card {
+    line-height: 1.2;
+    border: 1px solid #e0e0e0;
+    background: #CCD67F;
+    border-color: #CCD67F;
+    border-radius: 8px;
+    padding: 1.4rem;
+    height: 100%;
+    transition: border-color 0.2s;
+}
+
+.nav-card:hover {
+    background: #89933a;
+    color: #F3E4C9;
+}
+            
+.nav-title {
+    font-family: 'Libertinus Math', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+ 
+.nav-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
 
 </style>           
 """,unsafe_allow_html=True) # Permite colocar html e CSS
@@ -63,6 +93,14 @@ st.markdown("""
     <div class="hero-title"><span>Introdução a teoria de códigos corretores de erro:</span> uma aplicação computacional de anéis de grupo</div>
 </div>
 """, unsafe_allow_html=True)
+
+# Cria o carde de navegação
+st.markdown("""
+        <div class="nav-card">
+            <div class="nav-title">01) Modelagem das estruturas</div>
+            <div class="nav-desc">Em construção.</div>
+        </div>
+        """, unsafe_allow_html=True)
             
 # Cria o footer
 st.markdown("""
